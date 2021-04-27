@@ -4,6 +4,8 @@ class Maze:
             self.Position = position
             self.Neighbours = [None, None, None, None]
             #self.Weights = [0, 0, 0, 0]
+        def __lt__(self, other) -> bool:
+            return True
 
     def __init__(self, im):
 
